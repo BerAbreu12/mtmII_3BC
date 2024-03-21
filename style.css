@@ -1,42 +1,47 @@
-@import url(‘https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap’);
+/*AULA 01*/
 
-:root { 
-    --cor-de-fundo: #1E1E1E; 
-    --verde: #6FFF57; 
-    --branco: #FFFFFF; 
-    --botao-ativo: #3A375E; 
-    --botao-inativo: rgba(58, 55, 94, 0.5); 
-    --texto-fundo: rgba(58, 55, 94, 0.3); 
+:root {
+    --cor-de-fundo: #161618;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
+/* @import url('https://fonts.googleapis.com/css?family=Chakra+Petch:wgth@400:700&display=swap') */
 
-body {
+body{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
 
-.conteudo-principal { display: flex;
+/*AULA 02*/
+
+.conteudo-principal {   
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
-.titulo-principal { 
+.titulo-principal{
     text-align: center;
     width: 100%;
     font-size: 32px;
 }
 
-.titulo-principal span {
+.titulo-principal span{
     color: var(--verde);
 }
 
-.botao {
-    font-family: "Crakra Petch", sans-serif;
+/* ESTILIZAÇÃO DO BOTÃO */
+.botao{
+    font-family: "Chakra Petch", sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -45,5 +50,24 @@ body {
     font-size: 18px;
     align-items: center;
     width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-inativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
+
+.botoes {
+    display: block;
+}
+
+/*ARREDONDAR OS CANTOS DA BARRA DE BOTOES EM TELAS MENORES*/
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+}
+
+
+
+    
+
+
 
