@@ -39,7 +39,7 @@ body{
     color: var(--verde);
 }
 
-/* ESTILIZAÇÃO DO BOTÃO */
+/* ESTILIZAÇÃO DOS BOTÕES */
 .botao{
     font-family: "Chakra Petch", sans-serif;
     background-color: var(--botao-inativo);
@@ -51,7 +51,7 @@ body{
     align-items: center;
     width: 100%;
     border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-inativo);
+    border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
 }
@@ -63,8 +63,28 @@ body{
 /*ARREDONDAR OS CANTOS DA BARRA DE BOTOES EM TELAS MENORES*/
 .botao:first-child{
     border-radius: 40px 40px 0 0;
+}   
+
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
 }
 
+@media screen and (min-width: 768px) {
+    .botoes{
+        display: flex;
+    }
+
+    /*ARREDONDAR OS CANTOS DA BARRA DE BOTOES*/
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }   
+
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+    
+}
 
 
     
